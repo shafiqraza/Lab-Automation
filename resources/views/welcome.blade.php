@@ -1,100 +1,503 @@
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <title>ENergon &mdash; Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
 
-        <title>Laravel</title>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    
+    <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
+    
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}">
 
-            .full-height {
-                height: 100vh;
-            }
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">    
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
 
-            .position-ref {
-                position: relative;
-            }
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+    
+<style>
+   
+</style>
 
-            .content {
-                text-align: center;
-            }
+  </head>
+ <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-    </body>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html">ENergon</a></div>
+          <div>
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#work-section" class="nav-link">Work</a></li>
+                <li><a href="#process-section" class="nav-link">Process</a></li>
+                <!-- <li><a href="#services-section" class="nav-link">Services</a></li> -->
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
+                <li class="cta"><a href="#contact-section" class="nav-link"><span class="rounded border border-primary">Contact</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+      
+    </header> 
+
+    <div class="intro-section" id="home-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 mr-auto" data-aos="fade-up">
+            <h1>We do things right.</h1>
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
+            <p><a href="#" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+
+          </div>
+          <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
+            <figure class="img-absolute">
+              <img src="images/wal.jpg" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section section-1">
+      
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mr-auto mb-5">
+
+            <div class="mb-5">
+              <span class="section-sub-title d-block">About ENergon</span>
+              <h2 class="section-title">We Value More on Quality and not in Quantity.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-wrap"><span class="flaticon-download text-primary"></span></div>
+                  <div class="counter-text">
+                    <strong>2</strong>
+                    <span>Types of Tests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="counter d-flex align-items-start mb-5" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-wrap"><span class="flaticon-monitor text-primary"></span></div>
+                  <div class="counter-text">
+                    <strong>87</strong>
+                    <span>No. of Products</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <div class="box" data-aos="fade-up">
+                <div class="icon-wrap"><span class="flaticon-vector"></span></div>
+                <h3>Creativity is the key</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati commodi aspernatur eum eius inventore facilis.</p>
+              </div>
+              <img src="images/about1.jpg" alt="Image" class="img-fluid" style="height: 40rem; width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="site-section section-2" id="work-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ">
+            <span class="section-sub-title d-block">Excellent Work</span>
+            <h2 class="section-title">Our Works</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="owl-carousel nonloop-block-13">
+
+          <a class="work-thumb" href="images/about_1.jpg" data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Work Name Here</h3>
+              <span class="category">Website</span>
+            </div>
+            <img src="images/about_1.jpg" alt="Image" class="img-fluid">
+          </a> 
+          
+          <a class="work-thumb" href="images/slide_1.jpg"  data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Work Name Here</h3>
+              <span class="category">Illustration</span>
+            </div>
+            <img src="images/slide_1.jpg" alt="Image" class="img-fluid">
+          </a>
+
+          <a class="work-thumb" href="images/slide_2.jpg"  data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Work Name Here</h3>
+              <span class="category">Branding</span>
+            </div>
+            <img src="images/slide_2.jpg" alt="Image" class="img-fluid">
+          </a>
+
+          <a class="work-thumb" href="images/slide_3.jpg"  data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Work Name Here</h3>
+              <span class="category">Web Development</span>
+            </div>
+            <img src="images/slide_3.jpg" alt="Image" class="img-fluid">
+          </a>
+
+          <a class="work-thumb" href="images/slide_4.jpg"  data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Work Name Here</h3>
+              <span class="category">Design</span>
+            </div>
+            <img src="images/slide_4.jpg" alt="Image" class="img-fluid">
+          </a>
+      </div>
+
+    </div>
+
+
+    
+
+    <div class="site-section bg-light" id="process-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5">
+            <span class="section-sub-title d-block">Our Process</span>
+            <h2 class="section-title">Our Process</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="owl-carousel nonloop-block-14">
+        
+        <div class="service">
+          <div>
+            <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Research</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+
+        <div class="service">
+          <div>
+            <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Building</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Lab Testing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-chat display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>CPRI Testing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Launch</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="site-section section-2" id="process-section" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5">
+            <span class="section-sub-title d-block">Our Services</span>
+            <h2 class="section-title">Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="process p-3">
+              <span class="number">01</span>
+              <div>
+                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Research</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="process p-3">
+              <span class="number">02</span>
+              <div>
+                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Building</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="process p-3">
+              <span class="number">03</span>
+              <div>
+                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Launch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="site-section bg-light" id="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5">
+            <span class="section-sub-title d-block">Services</span>
+            <h2 class="section-title">Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="owl-carousel nonloop-block-14">
+        
+        <div class="service">
+          <div>
+            <span class="flaticon-reload display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Auto Reload</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+
+        <div class="service">
+          <div>
+            <span class="flaticon-download display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Download Videos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-chat display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Research</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+            <h3>Creative Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div> -->
+
+
+    <div class="site-section" id="contact-section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+
+
+            
+            <h2 class="section-title mb-3">Message Us</h2>
+            <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          
+            {!! Form::open(['method' => 'POST', 'action' => 'HomeController@store' , 'data-aos' => 'fade']) !!}
+                <div class="form-group row">
+                    <div class="col-md-6 mb-3 mb-lg-0">
+                        {!! Form::text('firstName',null,['class' => 'form-control','placeholder' => 'First Name']) !!}
+                    </div>
+                    <div class="col-md-6">
+                      {!! Form::text('lastName',null,['class' => 'form-control','placeholder' => 'Last Name']) !!}
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                      {!! Form::text('subject',null,['class' => 'form-control','placeholder' => 'Subject Name']) !!}
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                    {!! Form::email('email',null,['class' => 'form-control','placeholder' => 'Email']) !!}
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        {!! Form::textarea('msg',null,['class' => 'form-control','rows' => 5,'placeholder' => 'Write your message here.']) !!}
+                    </div>
+                </div>
+                <div class="form-group row">
+                <div class="col-md-6">
+                  
+                    {!! Form::submit('Send Message',['class' => 'btn btn-primary py-3 px-5 btn-block']) !!}
+                </div>
+              </div>
+
+            {!! Form::close() !!}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+     
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Amplify</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+            <h3>Links</h3>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Process</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Subscribe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
+            <form action="#">
+              <div class="d-flex mb-5">
+                <input type="text" class="form-control rounded-0" placeholder="Email">
+                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+            <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  
+    
+  </div> <!-- .site-wrap -->
+
+  <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ asset('js/jquery-ui.js') }}"></script>
+  <script src="{{ asset('js/popper.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.countdown.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ asset('js/aos.js') }}"></script>
+  <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.sticky.js') }}"></script>
+
+  
+  <script src="{{ asset('js/main.js') }}"></script>
+    
+  </body>
 </html>
