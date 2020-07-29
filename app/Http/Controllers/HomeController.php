@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Feedback;
 
 class HomeController extends Controller
 {
@@ -28,6 +29,15 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        return $request->all();
+      $feedback = new Feedback;
+      $feedback->firstname  = $request->firstname;
+      $feedback->lastname  = $request->lastname;
+      $feedback->email  = $request->email;
+      $feedback->subject  = $request->subject;
+      $feedback->msg  = $request->msg;
+      $feedback->save();
+      $msg = $request->session()->flash('successMsg','Thank You for your Feedback');
+      // $msg = ['success' => 'Thank You for your Feedback'];
+      return redirect('/index#contact-section');
     }
 }

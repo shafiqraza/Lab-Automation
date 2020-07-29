@@ -5,38 +5,38 @@
     <title>ENergon &mdash; Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    
+
+
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    
+
     <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
-    
+
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    
+
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">    
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-    
+
 <style>
-   
+
 </style>
 
   </head>
  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -47,10 +47,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
-    
+
+
      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
+
       <div class="container-fluid">
         <div class="d-flex align-items-center">
           <div class="site-logo"><a href="index.html">ENergon</a></div>
@@ -74,8 +74,8 @@
           </div>
         </div>
       </div>
-      
-    </header> 
+
+    </header>
 
     <div class="intro-section" id="home-section">
       <div class="container">
@@ -97,8 +97,8 @@
 
 
     <div class="site-section section-1">
-      
-    
+
+
       <div class="container">
         <div class="row">
           <div class="col-lg-5 mr-auto mb-5">
@@ -165,8 +165,8 @@
               <span class="category">Website</span>
             </div>
             <img src="images/about_1.jpg" alt="Image" class="img-fluid">
-          </a> 
-          
+          </a>
+
           <a class="work-thumb" href="images/slide_1.jpg"  data-fancybox="gallery">
             <div class="work-text">
               <h3>Work Name Here</h3>
@@ -203,7 +203,7 @@
     </div>
 
 
-    
+
 
     <div class="site-section bg-light" id="process-section">
       <div class="container">
@@ -216,9 +216,9 @@
         </div>
 
       </div>
-        
+
       <div class="owl-carousel nonloop-block-14">
-        
+
         <div class="service">
           <div>
             <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
@@ -263,142 +263,32 @@
       </div>
 
     </div>
-
-    <!-- <div class="site-section section-2" id="process-section" >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <span class="section-sub-title d-block">Our Services</span>
-            <h2 class="section-title">Our Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="process p-3">
-              <span class="number">01</span>
-              <div>
-                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Research</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="process p-3">
-              <span class="number">02</span>
-              <div>
-                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Building</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="process p-3">
-              <span class="number">03</span>
-              <div>
-                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Launch</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="site-section bg-light" id="services-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <span class="section-sub-title d-block">Services</span>
-            <h2 class="section-title">Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-      </div>
-        
-      <div class="owl-carousel nonloop-block-14">
-        
-        <div class="service">
-          <div>
-            <span class="flaticon-reload display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Auto Reload</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-
-        <div class="service">
-          <div>
-            <span class="flaticon-download display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Download Videos</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-chat display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>24/7 Support</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Research</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Creative Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div> -->
-
-
     <div class="site-section" id="contact-section">
       <div class="container">
 
         <div class="row justify-content-center">
           <div class="col-md-7">
 
+            @if (Session::has('successMsg'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <strong>Thank You!</strong> for your Message.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
 
-            
+            @endif
+
             <h2 class="section-title mb-3">Message Us</h2>
             <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          
+
             {!! Form::open(['method' => 'POST', 'action' => 'HomeController@store' , 'data-aos' => 'fade']) !!}
                 <div class="form-group row">
                     <div class="col-md-6 mb-3 mb-lg-0">
-                        {!! Form::text('firstName',null,['class' => 'form-control','placeholder' => 'First Name']) !!}
+                        {!! Form::text('firstname',null,['class' => 'form-control','placeholder' => 'First Name']) !!}
                     </div>
                     <div class="col-md-6">
-                      {!! Form::text('lastName',null,['class' => 'form-control','placeholder' => 'Last Name']) !!}
+                      {!! Form::text('lastname',null,['class' => 'form-control','placeholder' => 'Last Name']) !!}
                     </div>
                 </div>
                 <div class="form-group row">
@@ -419,7 +309,7 @@
                 </div>
                 <div class="form-group row">
                 <div class="col-md-6">
-                  
+
                     {!! Form::submit('Send Message',['class' => 'btn btn-primary py-3 px-5 btn-block']) !!}
                 </div>
               </div>
@@ -430,8 +320,8 @@
       </div>
     </div>
 
-  
-     
+
+
     <footer class="footer-section">
       <div class="container">
         <div class="row">
@@ -473,13 +363,13 @@
       </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </footer>
 
-  
-    
+
+
   </div> <!-- .site-wrap -->
 
   <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
@@ -496,8 +386,8 @@
   <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
   <script src="{{ asset('js/jquery.sticky.js') }}"></script>
 
-  
+
   <script src="{{ asset('js/main.js') }}"></script>
-    
+
   </body>
 </html>
