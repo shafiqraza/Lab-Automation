@@ -30,8 +30,8 @@
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{-- <img src="/srs/public/storage/images/{{ Auth::user()->photo->file }}" alt="profilelogo" height="30" width="30" style="border-radius:100%;background-size: cover;background-position: center;">
-                        --}}{{-- {{ Auth::user()->name }}  --}}
+                        {{-- <img src="/srs/public/storage/images/{{ Auth::user()->photo->file }}" alt="profilelogo" height="30" width="30" style="border-radius:100%;background-size: cover;background-position: center;">--}}
+                        {{ Auth::user()->name }} 
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#"></a>
@@ -64,6 +64,10 @@
                                     <a class="nav-link" href="/srs/public/admin/users">View All Users</a>
                                 </nav>
                             </div>
+                            <a class="nav-link" href="/srs/public/admin/roles">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Roles
+                            </a>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
                                 <div class="sb-nav-link-icon"><i class="fab fa-algolia"></i></i></div>
                                 MFG Product
@@ -79,25 +83,29 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Laboratory Test
                             </a>
-                            <a class="nav-link" href="http://localhost:50/srs/public/admin/cpritest">
+                            <a class="nav-link" href="/srs/public/admin/cpritest">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Cpri Test
                             </a>
-                             <a class="nav-link" href="http://localhost:50/srs/public/admin/launchedproduct">
+                             <a class="nav-link" href="/srs/public/admin/launchedproduct">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Launched Product
                             </a>
-                            <a class="nav-link" href="http://localhost:50/srs/public/admin/remfgproduct">
+                            <a class="nav-link" href="/srs/public/admin/remfgproduct">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 ReManufacture Product
                             </a>
-                            <a class="nav-link" href="http://localhost:50/srs/public/admin/trashedproduct">
+                            <a class="nav-link" href="/srs/public/admin/trashedproduct">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Trashed Items
-                            </a>                       
-                            <a class="nav-link" href="http://localhost:50/srs/public/admin/results">
+                            </a>
+                            <a class="nav-link" href="/srs/public/admin/results">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Results
+                            </a>
+                            <a class="nav-link" href="/srs/public/admin/feedback">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Feedback
                             </a>
                             {{-- <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts2">
                                 <div class="sb-nav-link-icon"><i class="fab fa-algolia"></i></i></div>
@@ -110,20 +118,20 @@
                                     <a class="nav-link" href="/srs/public/admin/manufacture_product">View All Tests</a>
                                 </nav>
                             </div> --}}
-                           
+
                         </div>
                     </div>
-                    
+
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
                         <div class="mt-4">
-                            @yield('content') 
-                        </div>   
+                            @yield('content')
+                        </div>
                     </div>
-                        
+
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">

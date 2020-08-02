@@ -161,42 +161,42 @@
 
           <a class="work-thumb" href="images/about_1.jpg" data-fancybox="gallery">
             <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Website</span>
+              <h3>Circuit</h3>
+              <span class="category">Lorem Ipsum is simply dummy text.</span>
             </div>
-            <img src="images/about_1.jpg" alt="Image" class="img-fluid">
+            <img src="{{ asset('images/check.jpg') }}" alt="Image" class="img-fluid">
           </a>
 
           <a class="work-thumb" href="images/slide_1.jpg"  data-fancybox="gallery">
             <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Illustration</span>
+              <h3>Circuit</h3>
+              <span class="category">Lorem Ipsum is simply dummy text.</span>
             </div>
-            <img src="images/slide_1.jpg" alt="Image" class="img-fluid">
+            <img src="{{ asset('images/product1.png') }}" alt="Image" class="img-fluid">
           </a>
 
           <a class="work-thumb" href="images/slide_2.jpg"  data-fancybox="gallery">
             <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Branding</span>
+              <h3>Power Breaker</h3>
+              <span class="category">Lorem Ipsum is simply dummy text.</span>
             </div>
-            <img src="images/slide_2.jpg" alt="Image" class="img-fluid">
+            <img src="{{ asset('images/product11.png') }}" alt="Image" class="img-fluid">
           </a>
 
           <a class="work-thumb" href="images/slide_3.jpg"  data-fancybox="gallery">
             <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Web Development</span>
+              <h3>Fuses</h3>
+              <span class="category">Lorem Ipsum is simply dummy text.</span>
             </div>
-            <img src="images/slide_3.jpg" alt="Image" class="img-fluid">
+            <img src="{{ asset('images/product6.png') }}" alt="Image" class="img-fluid">
           </a>
 
           <a class="work-thumb" href="images/slide_4.jpg"  data-fancybox="gallery">
             <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Design</span>
+              <h3>Capacitors</h3>
+              <span class="category">Lorem Ipsum is simply dummy text.</span>
             </div>
-            <img src="images/slide_4.jpg" alt="Image" class="img-fluid">
+            <img src="{{ asset('images/product9.png') }}" alt="Image" class="img-fluid">
           </a>
       </div>
 
@@ -271,7 +271,8 @@
 
             @if (Session::has('successMsg'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-              <strong>Thank You!</strong> for your Message.
+              {{-- <strong>Thank You!</strong> for your Message. --}}
+              {{ Session::get('successMsg') }}
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

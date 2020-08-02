@@ -19,7 +19,7 @@
 			<tr>
 				<td>{{ $product->id }}</td>
 				<td><a href="/srs/public/admin/manufacture_product/{{ $product->id }}">{{ $product->name }}</a></td>
-				<td><img src="../storage/images/{{ $product->photo->name }}" alt="" width="100" class="img-fluid rounded"></td>
+				<td><img src="../storage/images/{{ $product->photo->name }}" alt="product image" width="100" class="img-fluid rounded"></td>
 				<td>{{ $product->code }}</td>
 				<td>{{ $product->description }}</td>
 			</tr>

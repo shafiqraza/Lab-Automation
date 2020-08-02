@@ -23,8 +23,8 @@
 				<td>{{ $labTest->name }}</td>
 				<td>{{ $labTest->product->name }}</td>
 				<td><img src="../storage/images/{{ $labTest->product->photo->name }}" alt="Product Image" class="img-fluid rounded" width="100"></td>
-				<td>{{ isset($labTest->result_id) ? ($labTest->result_id == 1) ?  'Success' : 'Failed' : 'NOT Complete YET' }}</td>
-				<td>{{isset($labTest->details) ? $labTest->details : 'NOT Availible'  }}</td>
+				<td>{{ isset($labTest->result_id) ? ($labTest->result_id == 1) ?  'Success' : 'Failed' : 'Processing' }}</td>
+				<td>{{isset($labTest->details) ? $labTest->details : 'Processing'  }}</td>
 				<td>{{ $labTest->test_count }}</td>
 				<td><a href="/srs/public/admin/labtest/{{ $labTest->id }}/edit" class="btn btn-warning">Edit</a></td>
 			</tr>

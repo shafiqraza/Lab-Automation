@@ -22,6 +22,7 @@
 				<tr>
 					<th>Id</th>
 					<th>Name</th>
+					<th>Delete</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -29,6 +30,13 @@
 					<tr>
 						<td>{{ $result->id }}</td>
 						<td>{{ $result->name }}</td>	
+						<td>
+							{!! Form::open(['method' => 'DELETE' , 'action'=> ['ResultsController@destroy',$result->id]]) !!}
+								{!! Form::submit('Delete' , ['class' => 'btn btn-danger']) !!}
+							{!! Form::close() !!}
+						</td>
+
+
 					</tr>
 				
 				@endforeach

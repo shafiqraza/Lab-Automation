@@ -86,6 +86,9 @@ class ResultsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $result = Result::find($id);
+
+        $result->delete();
+        return redirect('admin/results');
     }
 }

@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 use App\Remanufacture_product;
 use App\Result;
 use App\Lab_test;
+use App\Cpri_test;
 use App\TrashedProduct;
 use App\LaunchedProduct;
+use App\Manufacture_product;
 
 
 class ReMfgProductController extends Controller
@@ -124,30 +126,51 @@ class ReMfgProductController extends Controller
             // $trashProduct->remanufacture_id = $product->id;
             // $trashProduct->save();
 
-            return redirect('admin/remfgproduct');   
+            return redirect('admin/remfgproduct'); 
         
 
 
          }elseif($request->result_id == 2) {
 
-            $trashProduct = new TrashedProduct;
-            $trashProduct->testable_id = $product->id;
-            $trashProduct->testable_type = 'Remanufacture Fault';
-            $trashProduct->save();
+            $reProductRepeat = Remanufacture_product::where(['testable_type' => $product->testable_type, 'testable_id' => $product->testable_id,'result_id' => 2]);
+
+            if ($reProductRepeat->count() <= 0) {
+                $trashProduct = new TrashedProduct;
+                $trashProduct->testable_id = $product->id;
+                $trashProduct->testable_type = 'Remanufacture Fault';
+                $trashProduct->save();
+            }
 
             // echo "Trashed return";
 
             if ($product->testable_type == 'App\Lab_test') {
-                
-                $product->lab_test->product->description = 'Trashed Item';
+                $lab_test = Lab_test::find($product->testable_id);
+                $lab_test->details = 'Trashed Item';
+                $lab_test->save();
+
+                $mfgProduct = Manufacture_product::find($lab_test->product->id);
+                $mfgProduct->description = 'Trashed Item';
+                $mfgProduct->save();
 
                 // echo "from Lab Test";
 
             }else{
-                $product->cpri_test->lab_test->product->description = 'Trashed Item';
+                $cpri_test  = Cpri_test::find($product->testable_id);
+                $cpri_test->details = 'Trashed Item';
+                $cpri_test->save();
+
+                $mfgProduct = Manufacture_product::find($cpri_test->lab_test->product->id);
+                $mfgProduct->description = 'Trashed Item';
+                
+                $mfgProduct->save();
                 // echo "CPRI test";
             }
         }
+            $product->result_id = $request->result_id;
+
+            $product->save();
+            return redirect('admin/remfgproduct'); 
+
     }
 
     /**
